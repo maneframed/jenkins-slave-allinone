@@ -21,4 +21,7 @@ WORKDIR /app
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
+USER jenkins
+WORKDIR /home/jenkins
+
 CMD ["/bin/bash"]
